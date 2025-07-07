@@ -1,23 +1,30 @@
+'use client'
 import React from 'react'
-import Button from './components/Button'
 import Navbar from './components/Navbar'
-import Card from './components/Card'
 import Alert from './components/Alert'
-import Table from './components/Table'
+import Button from './components/Button'
+import Card from './components/Card'
 import Imagen from './components/Imagen'
-import Accordion from './components/Acordeon'
+import Table from './components/Table'
+import Acordeon from './components/Acordeon'
 
-const page = () => {
+
+
+const Home = () => {
   return (
-<>
-<Navbar/>
-<Button/>
-<Card/>
-<Alert/>
-<Table/>
-<Imagen/>
-<Accordion/>
-</>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+
+      <main className="flex flex-col items-center justify-center gap-8 px-4 py-8">
+        <Button />
+        <Card />
+        <Alert />
+        <Table />
+        <Imagen />
+        <Acordeon />
+      </main>
+    </div>
   )
 }
-export default page
+
+export default Home
